@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beranda.PilihSampahFragment">
+
+    <ImageView
+        android:id="@+id/ps_kertas"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:src="@drawable/botolplastik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ps_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Botol Plastik"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ps_item_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp. 6000"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ps_info_barangtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:text="Informasi Barang"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ps_item_weight" />
+
+            <TextView
+                android:id="@+id/ps_item_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="5 kg"
+                android:textColor="@color/greentheme"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ps_item_name" />
+
+            <TextView
+                android:id="@+id/ps_info_barang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:text="Botol Coca cola 1 kg"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ps_info_barangtxt" />
+
+            <TextView
+                android:id="@+id/ps_info_barang2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:text="Tidak ada detail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ps_info_barang1" />
+
+            <TextView
+                android:id="@+id/ps_info_barang3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:text="Botol Aqua 2 kg"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ps_info_barang2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/SelectedUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="32dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ps_info_barang3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ps_ellipse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:src="@drawable/grey_ellipse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/green_profile"
+                        app:layout_constraintBottom_toBottomOf="@+id/ps_ellipse"
+                        app:layout_constraintEnd_toEndOf="@+id/ps_ellipse"
+                        app:layout_constraintStart_toStartOf="@+id/ps_ellipse"
+                        app:layout_constraintTop_toTopOf="@+id/ps_ellipse" />
+
+                    <TextView
+                        android:id="@+id/ps_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Baharuddin"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/ps_ellipse"
+                        app:layout_constraintTop_toTopOf="@+id/ps_ellipse" />
+
+                    <TextView
+                        android:id="@+id/ps_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Jl. Gunung Bawakaraeng, Penjualan Honda Makassar Indah, Makassar"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ps_username" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ps_hubungibtn"
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/login_greenbtn"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Hubungi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ps_space"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SelectedUser" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ps_belibtn"
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/login_greenbtn"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Beli Sekarang"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ps_space"
+                app:layout_constraintTop_toBottomOf="@+id/SelectedUser" />
+
+            <TextView
+                android:id="@+id/ps_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ps_hubungibtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

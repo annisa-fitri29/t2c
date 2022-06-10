@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/batal_btn.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/bottom_nav_color.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/delete_btn.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/greenbtn_stroke.xml" value="0.2203125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/grey_btn.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/grey_ellipse.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/ic_back_arrow.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/ic_right_arrow.xml" value="0.2203125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/location_icon.xml" value="0.2203125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/login_greenbtn.xml" value="0.1125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/notification_icon.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/pickup_icon.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/redbtn_stroke.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/regist_greenbtn.xml" value="0.1125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/drawable/round_outline.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/activity_pengepul.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/activity_penyetor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/activity_produk_penyetor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/content_pengepul.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/custom_dialogbatal.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/dropdown_item.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_akun_pengepul.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_akun_penyetor.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_akun_saya.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_batal_pick_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_beranda.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_daftar_alamat.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_daftar_produk.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_daftar_produk_penyetor.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_dibatalkan_pengepul.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_dijemput_pengepul.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_dijual_bottom_sheet.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_edit_akun.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_konfirmasi_info.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_konfirmasi_info_order.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_konfirmasi_order.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_konfirmasi_order_berhasil.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_konfirmasi_pick_up.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_konfirmasi_tambah_produk.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_maps_kolektor.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_maps_pengepul.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_maps_test.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_no_riwayat.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_notif.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_notification.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_notificationragment.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_peng_batal.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_peng_dijemput.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_pengepul_maps_standardbottomsheet.xml" value="0.19021739130434784" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_pick_up.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_pickup.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_pilih_jenis.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_pilih_jenis_sampah.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_pilih_sampah.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_riwayat_kosong.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_selesai.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_selesai_pengepul.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_start.xml" value="0.2" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_besi.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_botol.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_produk.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_produk_berhasil.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_produk_besi.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_produk_botol.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_produk_elektronik.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_produk_kertas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_tambah_produk_plastik.xml" value="0.2158671586715867" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_transaksi_batal.xml" value="0.19" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_view_ager_pengepul.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_view_pager_peng.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/fragment_view_pager_pengepul.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/order_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/riwayat_dibatalkan_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/layout/riwayat_selesai_pengepul_item.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/menu/bottom_navigation.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/menu/pengepul_navigation.xml" value="0.14010416666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/menu/penyetor_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Trashtocash/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/navigation/my_nav.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

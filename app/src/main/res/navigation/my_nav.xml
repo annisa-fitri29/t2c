@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.ttc.trashtocash.start.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_startFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_startFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ttc.trashtocash.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.ttc.trashtocash.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.ttc.trashtocash.beranda.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_pilihSampahFragment"
+            app:destination="@id/pilihSampahFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/pilihSampahFragment"
+        android:name="com.ttc.trashtocash.beranda.PilihSampahFragment"
+        android:label="fragment_pilih_sampah"
+        tools:layout="@layout/fragment_pilih_sampah" >
+        <action
+            android:id="@+id/action_pilihSampahFragment_to_konfirmasiInfoFragment"
+            app:destination="@id/konfirmasiInfoFragment" />
+        <action
+            android:id="@+id/action_pilihSampahFragment_to_mapsTestFragment"
+            app:destination="@id/mapsTestFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="berat"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="harga"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="image"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="lokasi"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Jl. Tarakan lr.155" />
+        <argument
+            android:name="tgljual"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="default" />
+        <argument
+            android:name="tgljemput"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Waiting for input" />
+        <argument
+            android:name="notelp"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="0000000" />
+    </fragment>
+    <fragment
+        android:id="@+id/konfirmasiInfoFragment"
+        android:name="com.ttc.trashtocash.konfirmasi.KonfirmasiInfoFragment"
+        android:label="fragment_konfirmasi_info"
+        tools:layout="@layout/fragment_konfirmasi_info" >
+        <action
+            android:id="@+id/action_konfirmasiInfoFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+        <action
+            android:id="@+id/action_konfirmasiInfoFragment_to_konfirmasiPickUpFragment"
+            app:destination="@id/konfirmasiPickUpFragment" />
+        <argument
+            android:name="harga"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="berat"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="jenis"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="waktujemput"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="tgljemput"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="alamat"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument android:name="notelp"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="tambahan"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="sampah"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/konfirmasiOrderBerhasilFragment"
+        android:name="com.ttc.trashtocash.konfirmasi.KonfirmasiOrderBerhasilFragment"
+        android:label="fragment_konfirmasi_order_berhasil"
+        tools:layout="@layout/fragment_konfirmasi_order_berhasil" >
+        <action
+            android:id="@+id/action_konfirmasiOrderBerhasilFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/konfirmasiPickUpFragment"
+        android:name="com.ttc.trashtocash.konfirmasi.KonfirmasiPickUpFragment"
+        android:label="fragment_konfirmasi_pick_up"
+        tools:layout="@layout/fragment_konfirmasi_pick_up" >
+        <action
+            android:id="@+id/action_konfirmasiPickUpFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+        <action
+            android:id="@+id/action_konfirmasiPickUpFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pilihJenisSampahFragment"
+        android:name="com.ttc.trashtocash.pickup.PilihJenisSampahFragment"
+        android:label="fragment_pilih_jenis_sampah"
+        tools:layout="@layout/fragment_pilih_jenis_sampah">
+        <argument
+            android:name="jenispermintaan"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="pickup" />
+        <action
+            android:id="@+id/action_pilihJenisSampahFragment_to_tambahProdukFragment"
+            app:destination="@id/tambahProdukFragment" />
+        <action
+            android:id="@+id/action_pilihJenisSampahFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daftarAlamatFragment"
+        android:name="com.ttc.trashtocash.alamat.DaftarAlamatFragment"
+        android:label="fragment_daftar_alamat"
+        tools:layout="@layout/fragment_daftar_alamat" >
+        <action
+            android:id="@+id/action_daftarAlamatFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickUpFragment"
+        android:name="com.ttc.trashtocash.pickup.PickUpFragment"
+        android:label="fragment_pick_up"
+        tools:layout="@layout/fragment_pick_up">
+        <action
+            android:id="@+id/action_pickUpFragment_to_daftarAlamatFragment"
+            app:destination="@id/daftarAlamatFragment" />
+        <action
+            android:id="@+id/action_pickUpFragment_to_pilihJenisFragment"
+            app:destination="@id/pilihJenisSampahFragment" />
+        <argument
+            android:name="harga"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="berat"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="jenis"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_pickUpFragment_to_tambahProdukBesiFragment"
+            app:destination="@id/tambahProdukBesiFragment" />
+        <action
+            android:id="@+id/action_pickUpFragment_to_tambahProdukBotolFragment"
+            app:destination="@id/tambahProdukBotolFragment" />
+        <argument
+            android:name="sampah"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_pickUpFragment_to_tambahProdukPlastikFragment"
+            app:destination="@id/tambahProdukPlastikFragment" />
+        <action
+            android:id="@+id/action_pickUpFragment_to_tambahProdukElektronikFragment"
+            app:destination="@id/tambahProdukElektronikFragment" />
+        <action
+            android:id="@+id/action_pickUpFragment_to_konfirmasiInfoFragment"
+            app:destination="@id/konfirmasiInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsTestFragment"
+        android:name="com.ttc.trashtocash.beranda.MapsTestFragment"
+        android:label="fragment_maps_test"
+        tools:layout="@layout/fragment_maps_test" />
+    <fragment
+        android:id="@+id/akunPenyetorFragment"
+        android:name="com.ttc.trashtocash.akun.AkunPenyetorFragment"
+        android:label="fragment_akun_penyetor"
+        tools:layout="@layout/fragment_akun_penyetor" >
+        <action
+            android:id="@+id/action_akunPenyetorFragment_to_daftarProdukPenyetorFragment"
+            app:destination="@id/daftarProdukPenyetorFragment" />
+        <action
+            android:id="@+id/action_akunPenyetorFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_akunPenyetorFragment_to_editAkunFragment"
+            app:destination="@id/editAkunFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daftarProdukPenyetorFragment"
+        android:name="com.ttc.trashtocash.tambahproduk.DaftarProdukPenyetorFragment"
+        android:label="fragment_daftar_produk_penyetor"
+        tools:layout="@layout/fragment_daftar_produk_penyetor" >
+        <action
+            android:id="@+id/action_daftarProdukPenyetorFragment_to_tambahProdukFragment"
+            app:destination="@id/tambahProdukFragment" />
+        <action
+            android:id="@+id/action_daftarProdukPenyetorFragment_to_akunPenyetorFragment"
+            app:destination="@id/akunPenyetorFragment" />
+        <action
+            android:id="@+id/action_daftarProdukPenyetorFragment_to_tambahProdukBotolFragment"
+            app:destination="@id/tambahProdukBotolFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahProdukFragment"
+        android:name="com.ttc.trashtocash.akun.TambahProdukFragment"
+        android:label="fragment_tambah_produk"
+        tools:layout="@layout/fragment_tambah_produk" >
+        <action
+            android:id="@+id/action_tambahProdukFragment_to_tambahBesiFragment"
+            app:destination="@id/tambahProdukBesiFragment" />
+        <argument
+            android:name="harga"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument android:name="berat"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="jenis"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="sampah"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_tambahProdukFragment_to_pilihJenisSampahFragment"
+            app:destination="@id/pilihJenisSampahFragment" />
+        <action
+            android:id="@+id/action_tambahProdukFragment_to_tambahProdukBotolFragment"
+            app:destination="@id/tambahProdukBotolFragment" />
+        <action
+            android:id="@+id/action_tambahProdukFragment_to_tambahProdukPlastikFragment"
+            app:destination="@id/tambahProdukPlastikFragment" />
+        <action
+            android:id="@+id/action_tambahProdukFragment_to_tambahProdukElektronikFragment"
+            app:destination="@id/tambahProdukElektronikFragment" />
+        <action
+            android:id="@+id/action_tambahProdukFragment_to_konfirmasiTambahProdukFragment"
+            app:destination="@id/konfirmasiTambahProdukFragment" />
+        <argument
+            android:name="notelp"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahProdukBesiFragment"
+        android:name="com.ttc.trashtocash.tambahproduk.TambahProdukBesiFragment"
+        android:label="fragment_tambah_besi"
+        tools:layout="@layout/fragment_tambah_produk_besi">
+        <argument
+            android:name="jenispermintaan"
+            android:defaultValue="pickup"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_tambahProdukBesiFragment_to_tambahProdukFragment"
+            app:destination="@id/tambahProdukFragment" />
+        <action
+            android:id="@+id/action_tambahProdukBesiFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editAkunFragment"
+        android:name="com.ttc.trashtocash.akun.EditAkunFragment"
+        android:label="fragment_edit_akun"
+        tools:layout="@layout/fragment_edit_akun" >
+        <action
+            android:id="@+id/action_editAkunFragment_to_akunPenyetorFragment"
+            app:destination="@id/akunPenyetorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.ttc.trashtocash.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/tambahProdukBotolFragment"
+        android:name="com.ttc.trashtocash.tambahproduk.TambahProdukBotolFragment"
+        android:label="fragment_tambah_produk_botol"
+        tools:layout="@layout/fragment_tambah_produk_botol" >
+        <argument
+            android:name="jenispermintaan"
+            app:argType="string"
+            android:defaultValue="pickup" />
+        <action
+            android:id="@+id/action_tambahProdukBotolFragment_to_tambahProdukFragment"
+            app:destination="@id/tambahProdukFragment" />
+        <action
+            android:id="@+id/action_tambahProdukBotolFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahProdukBerhasilFragment"
+        android:name="com.ttc.trashtocash.tambahproduk.TambahProdukBerhasilFragment"
+        android:label="fragment_tambah_produk_berhasil"
+        tools:layout="@layout/fragment_tambah_produk_berhasil" >
+        <action
+            android:id="@+id/action_tambahProdukBerhasilFragment_to_daftarProdukPenyetorFragment"
+            app:destination="@id/daftarProdukPenyetorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahProdukPlastikFragment"
+        android:name="com.ttc.trashtocash.tambahproduk.TambahProdukPlastikFragment"
+        android:label="fragment_tambah_produk_plastik"
+        tools:layout="@layout/fragment_tambah_produk_plastik" >
+        <action
+            android:id="@+id/action_tambahProdukPlastikFragment_to_tambahProdukFragment"
+            app:destination="@id/tambahProdukFragment" />
+        <argument
+            android:name="jenispermintaan"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_tambahProdukPlastikFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahProdukElektronikFragment"
+        android:name="com.ttc.trashtocash.tambahproduk.TambahProdukElektronikFragment"
+        android:label="fragment_tambah_produk_elektronik"
+        tools:layout="@layout/fragment_tambah_produk_elektronik" >
+        <action
+            android:id="@+id/action_tambahProdukElektronikFragment_to_tambahProdukFragment"
+            app:destination="@id/tambahProdukFragment" />
+        <action
+            android:id="@+id/action_tambahProdukElektronikFragment_to_pickUpFragment"
+            app:destination="@id/pickUpFragment" />
+        <argument
+            android:name="jenispermintaan"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+    </fragment>
+    <fragment
+        android:id="@+id/konfirmasiTambahProdukFragment"
+        android:name="com.ttc.trashtocash.tambahproduk.KonfirmasiTambahProdukFragment"
+        android:label="fragment_konfirmasi_tambah_produk"
+        tools:layout="@layout/fragment_konfirmasi_tambah_produk" >
+        <action
+            android:id="@+id/action_konfirmasiTambahProdukFragment_to_tambahProdukBerhasilFragment"
+            app:destination="@id/tambahProdukBerhasilFragment" />
+        <action
+            android:id="@+id/action_konfirmasiTambahProdukFragment_to_tambahProdukFragment"
+            app:destination="@id/tambahProdukFragment" />
+        <argument
+            android:name="berat"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="jenis"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="notelp"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="alamat"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="harga"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="tambahan"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+        <argument
+            android:name="sampah"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='""' />
+    </fragment>
+</navigation>

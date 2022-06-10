@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengepul.SelesaiPengepulFragment">
+
+
+    <TextView
+        android:id="@+id/sPengepulPenjemputanstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Penjualan Saya"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sPengepulDikemasbtn"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/grey_btn"
+        android:fontFamily="@font/poppins"
+        android:text="Dijemput"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/sPengepulSelesaibtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sPengepulPenjemputanstxt"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sPengepulSelesaibtn"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/login_greenbtn"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Selesai"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sPengepulPenjemputanstxt"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sPengepulDibatalkanbtn"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/grey_btn"
+        android:fontFamily="@font/poppins"
+        android:text="Dibatalkan"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sPengepulSelesaibtn"
+        app:layout_constraintTop_toBottomOf="@+id/sPengepulPenjemputanstxt"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sPengepulSelesaibtn" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sgreyprofilecircle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/grey_ellipse"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/sgreenprofilepengepul"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/green_profile"
+                app:layout_constraintBottom_toBottomOf="@+id/sgreyprofilecircle"
+                app:layout_constraintEnd_toEndOf="@+id/sgreyprofilecircle"
+                app:layout_constraintStart_toStartOf="@+id/sgreyprofilecircle"
+                app:layout_constraintTop_toTopOf="@+id/sgreyprofilecircle" />
+
+            <TextView
+                android:id="@+id/spenjemputanname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Annisa"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/sgreyprofilecircle"
+                app:layout_constraintStart_toEndOf="@+id/sgreyprofilecircle"
+                app:layout_constraintTop_toTopOf="@+id/sgreyprofilecircle" />
+
+            <TextView
+                android:id="@+id/sselesaitxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Selesai"
+                android:textColor="@color/greentheme"
+                app:layout_constraintBottom_toBottomOf="@+id/spenjemputanname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/spenjemputanname" />
+
+            <ImageView
+                android:id="@+id/s_itempict"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/besibekas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sgreyprofilecircle" />
+
+            <TextView
+                android:id="@+id/s_itemname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Tembaga Biasa"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/s_itempict"
+                app:layout_constraintTop_toTopOf="@+id/s_itempict" />
+
+            <TextView
+                android:id="@+id/s_itemweight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="5 Kg"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/s_itempict"
+                app:layout_constraintTop_toBottomOf="@+id/s_itemname1" />
+
+            <TextView
+                android:id="@+id/sitem_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp. 45.000"
+                android:textColor="@color/greentheme"
+                app:layout_constraintBottom_toTopOf="@+id/sgreyline"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/sgreyline"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/grey_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/s_itempict" />
+
+            <TextView
+                android:id="@+id/s_totaltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Total Pembayaran"
+                android:fontFamily="@font/poppins"
+                app:layout_constraintBottom_toBottomOf="@+id/s_totalprice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/s_totalprice" />
+
+            <TextView
+                android:id="@+id/s_totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rp. 225.000"
+                android:textColor="@color/greentheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sgreyline"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

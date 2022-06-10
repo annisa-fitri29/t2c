@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pickup.PilihJenisSampahFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/js_bungkusrokok_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/greentheme"
+            app:layout_constraintBottom_toBottomOf="@+id/js_bungkusrokoktxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_bungkusrokoktxt" />
+
+        <CheckBox
+            android:id="@+id/js_kertaslainnya_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/greentheme"
+            app:layout_constraintBottom_toBottomOf="@+id/js_kertaslainnyatxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_kertaslainnyatxt" />
+
+        <ImageView
+            android:id="@+id/js_bungkusrokok_line"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_bungkusrokoktxt" />
+
+        <ImageView
+            android:id="@+id/js_kertaslainnya_line"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_kertaslainnyatxt" />
+
+        <ImageView
+            android:id="@+id/js_buku_line"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_bukutxt" />
+
+        <CheckBox
+            android:id="@+id/js_koran_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/greentheme"
+            app:layout_constraintBottom_toBottomOf="@+id/js_korantxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_korantxt" />
+
+        <ImageView
+            android:id="@+id/js_koran_line"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_korantxt" />
+
+        <CheckBox
+            android:id="@+id/js_karton_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/greentheme"
+            app:layout_constraintBottom_toBottomOf="@+id/js_kartontxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_kartontxt" />
+
+        <TextView
+            android:id="@+id/js_jenis_sampahtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Sampah"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/js_backbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_backbtn" />
+
+        <ImageView
+            android:id="@+id/js_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/js_perkiraan_berattxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Perkiraan Berat"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_backbtn" />
+
+        <ImageView
+            android:id="@+id/js_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_icon_kertas"
+            app:layout_constraintStart_toStartOf="@+id/js_perkiraan_berattxt"
+            app:layout_constraintTop_toBottomOf="@+id/js_perkiraan_berattxt" />
+
+        <TextView
+            android:id="@+id/js_item_kertas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Kertas"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintBottom_toBottomOf="@+id/js_item_icon"
+            app:layout_constraintStart_toEndOf="@+id/js_item_icon"
+            app:layout_constraintTop_toTopOf="@+id/js_item_icon" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/js_item_kertas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_item_kertas">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/js_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="-"
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/js_item_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="0"
+                    android:textColor="@color/greentheme"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/js_minus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/js_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="+"
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/js_item_weight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/kg_txt"
+                    app:layout_constraintTop_toTopOf="@+id/js_item_weight" />
+
+                <TextView
+                    android:id="@+id/kg_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text=" Kg"
+                    android:textColor="@color/greentheme"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/js_item_weight"
+                    app:layout_constraintEnd_toStartOf="@+id/js_plus"
+                    app:layout_constraintStart_toEndOf="@+id/js_item_weight"
+                    app:layout_constraintTop_toTopOf="@+id/js_item_weight" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/js_kategoritxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Kategori Kertas"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_item_icon" />
+
+        <TextView
+            android:id="@+id/js_kategori_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Pilih kategori kertas yang sesuai dan lihat estimasi harga yang ditawarkan"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_kategoritxt" />
+
+        <TextView
+            android:id="@+id/js_hvstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kertas Putih / HVS"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_kategori_desc" />
+
+        <ImageView
+            android:id="@+id/js_hvs_line"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_hvstxt" />
+
+        <CheckBox
+            android:id="@+id/js_hvs_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/greentheme"
+            app:layout_constraintBottom_toBottomOf="@+id/js_hvstxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_hvstxt" />
+
+        <TextView
+            android:id="@+id/js_kartontxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Karton"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_hvs_line" />
+
+        <ImageView
+            android:id="@+id/js_karton_line"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_kartontxt" />
+
+        <TextView
+            android:id="@+id/js_korantxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Koran"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_karton_line" />
+
+        <TextView
+            android:id="@+id/js_bukutxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Buku"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_koran_line" />
+
+        <CheckBox
+            android:id="@+id/js_buku_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/greentheme"
+            app:layout_constraintBottom_toBottomOf="@+id/js_bukutxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/js_bukutxt" />
+
+        <TextView
+            android:id="@+id/js_bungkusrokoktxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Bungkus Rokok"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_buku_line" />
+
+        <TextView
+            android:id="@+id/js_kertaslainnyatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kertas Lainnya"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_bungkusrokok_line" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/js_continue_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/greentheme"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_kertaslainnya_line">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/js_lanjutbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_right_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/js_lanjuttxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Lanjut"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/js_lanjutbtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/js_estimasiharga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Rp. 0"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/js_estimasitxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Estimasi Harga per Kg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/js_estimasiharga" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

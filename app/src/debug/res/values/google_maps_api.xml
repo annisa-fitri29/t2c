@@ -1,0 +1,34 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=2C:09:EC:35:54:14:74:27:31:02:0E:33:03:3F:3F:42:D0:D6:37:37%3Bcom.ttc.trashtocash
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.ttc.trashtocash
+
+    SHA-1 certificate fingerprint:
+    2C:09:EC:35:54:14:74:27:31:02:0E:33:03:3F:3F:42:D0:D6:37:37
+
+    Variant: debugAndroidTest
+    Config: debug
+    Store: C:\Users\LENOVO\.android\debug.keystore
+    Alias: AndroidDebugKey
+    MD5: C7:2E:61:9A:C9:2D:2D:F8:D9:CB:0B:62:34:52:42:76
+    SHA1: 2C:09:EC:35:54:14:74:27:31:02:0E:33:03:3F:3F:42:D0:D6:37:37
+    SHA-256: 56:C2:E0:80:C9:6D:79:87:84:9B:F6:DB:CD:FB:21:7A:5E:C7:09:B9:D9:F4:2B:43:14:72:FB:FE:03:3A:0F:3D
+    Valid until: Friday, December 15, 2051
+
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCjMg-RTf2F9SDCgoUBfOL1wy3b15i7Xdw</string>
+</resources>

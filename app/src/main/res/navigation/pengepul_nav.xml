@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pengepul_nav"
+    app:startDestination="@id/viewPagerPengepulFragment2">
+
+    <fragment
+        android:id="@+id/akunPengepulFragment"
+        android:name="com.ttc.trashtocash.pengepul.AkunPengepulFragment"
+        android:label="fragment_akun_pengepul"
+        tools:layout="@layout/fragment_akun_pengepul" />
+    <fragment
+        android:id="@+id/viewPagerPengepulFragment2"
+        android:name="com.ttc.trashtocash.pengepul.ViewPagerPengepulFragment"
+        android:label="fragment_view_pager_pengepul"
+        tools:layout="@layout/fragment_view_pager_pengepul" />
+</navigation>

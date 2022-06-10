@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/berandaFragment"
+        android:icon="@drawable/home_icon"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/pickUpFragment"
+        android:icon="@drawable/pickup_icon"
+        android:title="Pick up" />
+
+    <item
+        android:id="@+id/notificationFragment"
+        android:icon="@drawable/notification_icon"
+        android:title="Notification" />
+    <item
+        android:id="@+id/akunPenyetorFragment"
+        android:icon="@drawable/myaccount_icon"
+        android:title="Akun" />
+
+</menu>

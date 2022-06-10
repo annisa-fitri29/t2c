@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification.NotificationFragment">
+
+    <TextView
+        android:id="@+id/Notificationtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Notifikasi"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/notif_reload_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_reload_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/Notificationtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Notificationtxt" />
+
+    <ImageView
+        android:id="@+id/no_notifimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_notif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Notificationtxt"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/no_notiftxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tidak Ada Notifikasi"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/no_notifimg"
+        app:layout_constraintStart_toStartOf="@+id/no_notifimg"
+        app:layout_constraintTop_toBottomOf="@+id/no_notifimg" />
+
+    <TextView
+        android:id="@+id/no_notiftxt2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Ayo, jual dan beli sampah disekitarmu!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_notiftxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

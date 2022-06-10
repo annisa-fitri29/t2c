@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".akun.TambahProdukFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihBotolKacaBTN"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/login_greenbtn"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pilih"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconBotolKaca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconBotolKaca"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihBotolKacaBTN2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/greenbtn_stroke"
+            android:fontFamily="@font/poppins_bold"
+            android:text="DIPILIH"
+            android:textAllCaps="false"
+            android:textColor="@color/greentheme"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconBotolKaca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconBotolKaca"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihElektronikBTN"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/login_greenbtn"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pilih"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconElektronik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconElektronik"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihElektronikBTN2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/greenbtn_stroke"
+            android:fontFamily="@font/poppins_bold"
+            android:text="DIPILIH"
+            android:textAllCaps="false"
+            android:textColor="@color/greentheme"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconElektronik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconElektronik"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/TP_garis5"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_pilihBesiBTN" />
+
+        <ImageView
+            android:id="@+id/TP_garis7"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_pilihElektronikBTN" />
+
+        <ImageView
+            android:id="@+id/TP_garis6"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_pilihBotolKacaBTN" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihBesiBTN"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/login_greenbtn"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pilih"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconBesi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconBesi"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihBesiBTN2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/greenbtn_stroke"
+            android:fontFamily="@font/poppins_medium"
+            android:text="DIPILIH"
+            android:textAllCaps="false"
+            android:textColor="@color/greentheme"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconBesi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconBesi"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/TP_garis4"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_pilihPlastikBTN" />
+
+        <TextView
+            android:id="@+id/TP_tambahproduktxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tambah Produk"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TP_informasiSampahtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Informasi Sampah"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_tambahproduktxt" />
+
+        <TextView
+            android:id="@+id/TP_descInformasiSampahtxt"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Pilih jenis sampah dan masukkan perkiraan berat sampah."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_informasiSampahtxt" />
+
+        <ImageView
+            android:id="@+id/TP_iconKertas"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_icon_kertas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_descInformasiSampahtxt" />
+
+        <TextView
+            android:id="@+id/TP_kertastxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Kertas"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconKertas"
+            app:layout_constraintStart_toEndOf="@+id/TP_iconKertas"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconKertas" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihkertasBTN"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/login_greenbtn"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pilih"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconKertas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconKertas"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihkertasBTN2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/greenbtn_stroke"
+            android:fontFamily="@font/poppins_bold"
+            android:text="DIPILIH"
+            android:textAllCaps="false"
+            android:textColor="@color/greentheme"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconKertas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconKertas"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/TP_iconPlastik"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_icon_plastik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_garis1" />
+
+        <TextView
+            android:id="@+id/TP_plastiktxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Plastik"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconPlastik"
+            app:layout_constraintStart_toEndOf="@+id/TP_iconPlastik"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconPlastik" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihPlastikBTN"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/login_greenbtn"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pilih"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconPlastik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconPlastik"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/TP_pilihPlastikBTN2"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/greenbtn_stroke"
+            android:fontFamily="@font/poppins_bold"
+            android:text="DIPILIH"
+            android:textAllCaps="false"
+            android:textColor="@color/greentheme"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconPlastik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconPlastik"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/TP_garis1"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/grey_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_pilihkertasBTN" />
+
+        <ImageView
+            android:id="@+id/TP_iconBesi"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_icon_besi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_garis4" />
+
+        <TextView
+            android:id="@+id/TP_besitxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Besi"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconBesi"
+            app:layout_constraintStart_toEndOf="@+id/TP_iconBesi"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconBesi" />
+
+        <ImageView
+            android:id="@+id/TP_iconBotolKaca"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_icon_botolkaca"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_garis5" />
+
+        <TextView
+            android:id="@+id/TP_botolKacatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Botol Kaca"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconBotolKaca"
+            app:layout_constraintStart_toEndOf="@+id/TP_iconBotolKaca"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconBotolKaca" />
+
+        <ImageView
+            android:id="@+id/TP_iconElektronik"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_icon_elektronik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_garis6" />
+
+        <TextView
+            android:id="@+id/TP_elektroniktxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Elektronik"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TP_iconElektronik"
+            app:layout_constraintStart_toEndOf="@+id/TP_iconElektronik"
+            app:layout_constraintTop_toTopOf="@+id/TP_iconElektronik" />
+
+        <TextView
+            android:id="@+id/TP_informasiPenjemputantxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Informasi Penjemputan"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_garis7" />
+
+        <TextView
+            android:id="@+id/TP_descInformasiPenjemputan"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Masukkan informasi mu dengan lengkap agar sampah segera dijemput."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_informasiPenjemputantxt" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TP_alamat_pickup_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_noponsel_pickup_text_input_layout">
+
+            <EditText
+                android:id="@+id/TP_etalamat_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Alamat"
+                android:inputType="none"
+                android:textColor="@color/black"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TP_noponsel_pickup_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_descInformasiPenjemputan">
+
+            <EditText
+                android:id="@+id/TP_etnoponsel_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="No. Ponsel"
+                android:textColor="@color/black"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TP_infotambahan_pickup_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:boxBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_alamat_pickup_text_input_layout">
+
+            <EditText
+                android:id="@+id/TP_etinfotambahan_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Info tambahan (opsional)"
+                android:textColor="@color/black"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/TP_newline"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_infotambahan_pickup_text_input_layout" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/konfirmTambahProdukBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login_greenbtn"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Konfirmasi Tambah Produk"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TP_infotambahan_pickup_text_input_layout"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

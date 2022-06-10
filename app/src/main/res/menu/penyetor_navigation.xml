@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pickUpFragment2"
+        android:icon="@drawable/pickup_icon"
+        android:title="Pick up" />
+    <item
+        android:id="@+id/akunPenyetorFragment2"
+        android:icon="@drawable/myaccount_icon"
+        android:title="Akun" />
+</menu>
